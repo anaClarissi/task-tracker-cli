@@ -32,6 +32,20 @@ public class Task {
 
     }
 
+    public Task(Integer id, String description, TaskStatus status, LocalDateTime createdAt, LocalDateTime updatedAt) {
+
+        this.id = id;
+
+        this.description = description;
+
+        this.status = status;
+
+        this.createdAt = createdAt;
+
+        this.updatedAt = updatedAt;
+
+    }
+
     public Integer getId() {
 
         return id;
