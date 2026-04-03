@@ -10,7 +10,7 @@ public class TaskService {
 
     private final TaskRepository repository = new TaskRepository();
 
-    public void add(String description) {
+    public Integer add(String description) {
 
         List<Task> list = repository.findAll();
 
@@ -21,6 +21,8 @@ public class TaskService {
         list.add(task);
 
         repository.saveAll(list);
+
+        return task.getId();
 
     }
 

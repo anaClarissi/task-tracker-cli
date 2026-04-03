@@ -1,8 +1,10 @@
 ### IntelliJ IDEA ###
+.idea/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
+*.iml
 
 ### Eclipse ###
 .apt_generated
@@ -15,6 +17,15 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+
+### Compilados ###
+*.class
+
+### Artefatos ###
+*.jar
+
+### Logs ###
+*.log
 
 ### NetBeans ###
 /nbproject/private/
